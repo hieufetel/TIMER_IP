@@ -1,0 +1,157 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /test_bench
+=== Design Unit: work.test_bench
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         9         7    56.25%
+
+================================Branch Details================================
+
+Branch Coverage for instance /test_bench
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../tb/test_bench.v
+------------------------------------IF Branch------------------------------------
+    64                                         5     Count coming in to IF
+    64              1                    ***0***     		if(err != 0) begin 
+    66              1                          5     		end else begin
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    110                                       60     Count coming in to IF
+    110             1                    ***0***     				if(pslverr_exp == 1 ) begin 
+    112             1                         60     				end else begin 
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    146                                      870     Count coming in to IF
+    146             1                    ***0***     			if(tim_pslverr == 1) begin
+                                             870     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    147                                  ***0***     Count coming in to IF
+    147             1                    ***0***     				if(pslverr_exp == 1 ) begin 
+    149             1                    ***0***     				end else begin 
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    193                                       45     Count coming in to IF
+    193             1                    ***0***     				if(pslverr_exp == 1 ) begin 
+    195             1                         45     				end else begin 
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    224                                      570     Count coming in to IF
+    224             1                        570     			if((data & mask ) === (exp_data & mask)) begin
+    228             1                    ***0***     			end else begin
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /test_bench --
+
+  File ../tb/test_bench.v
+----------------Focused Condition View-------------------
+Line       64 Item    1  (err != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+  (err != 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          5  (err != 0)_0          -                             
+  Row   2:    ***0***  (err != 0)_1          -                             
+
+----------------Focused Condition View-------------------
+Line       224 Item    1  ((data & mask) === (exp_data & mask))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                             Input Term   Covered  Reason for no coverage   Hint
+                            -----------  --------  -----------------------  --------------
+  ((data & mask) === (exp_data & mask))         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                               Non-masking condition(s)      
+ ---------  ---------  --------------------                     -------------------------     
+  Row   1:    ***0***  ((data & mask) === (exp_data & mask))_0  -                             
+  Row   2:         10  ((data & mask) === (exp_data & mask))_1  -                             
+
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     840       829        11    98.69%
+
+================================Statement Details================================
+
+Statement Coverage for instance /test_bench --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../tb/test_bench.v
+    65              1     			$display("Test_result FAILED");
+    111             1     					pslverr_detected = 1;
+    148             1     					pslverr_detected = 1;
+    150             1     				$display("=================================================");
+    151             1     				$display("t=%10d PASS: pslverr detected", $time);
+    152             1     				$display("=================================================");
+    194             1     					pslverr_detected = 1;
+    229             1     				$display("=================================================");
+    230             1     				$display("%10d FAIL: rdata = %x at address %x is not correct, exp_data = %x", $time, data, addr, exp_data);
+    231             1     				$display("=================================================");
+    232             1     				err = err + 1;
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        246       162        84    65.85%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /test_bench --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                          dbg_mode           5           5      100.00 
+                                         err[0-31]           0           0        0.00 
+                                  pslverr_detected           0           0        0.00 
+                                       pslverr_exp           0           0        0.00 
+                                           sys_clk          10          10      100.00 
+                                         sys_rst_n           5          10      100.00 
+                                           tim_int          10          10      100.00 
+                                    tim_paddr[0-1]           0           0        0.00 
+                                    tim_paddr[2-4]          10          10      100.00 
+                                      tim_paddr[5]           5           5      100.00 
+                                   tim_paddr[6-11]           0           0        0.00 
+                                       tim_penable          10          10      100.00 
+                                   tim_prdata[0-7]          10          10      100.00 
+                                  tim_prdata[8-31]           5           5      100.00 
+                                        tim_pready          10          10      100.00 
+                                          tim_psel          10          10      100.00 
+                                       tim_pslverr          10          10      100.00 
+                                    tim_pstrb[0-3]          10          10      100.00 
+                                  tim_pwdata[0-31]          10          10      100.00 
+                                        tim_pwrite          10          10      100.00 
+
+Total Node Count     =        123 
+Toggled Node Count   =         81 
+Untoggled Node Count =         42 
+
+Toggle Coverage      =      65.85% (162 of 246 bins)
+
+
+Total Coverage By Instance (filtered view): 55.19%
+

@@ -1,0 +1,175 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/ictc/student_data/duchieu/final/final/sim
+T_opt
+!s110 1765283129
+VFlbDH5__1O:;S8>]YNAQf0
+04 10 4 work test_bench fast 0
+=1-bc2411209e67-69381539-4b84c-370d
+Z3 !s102 +cover=bcesft
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U6 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +cover=bcesft
+Z4 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+vapb_slave
+Z5 2../rtl/apb_slave.v|../rtl/counter_ctrl.v|../rtl/interrupt.v|../rtl/register.v|../rtl/timer_top.v|../tb/test_bench.v
+Z6 !s110 1765283128
+!i10b 1
+!s100 M7BP^gdBhEBVoEGFU77OW2
+IS3EQ3Tmc28?nAimIP67l_1
+R2
+w1763898270
+8../rtl/apb_slave.v
+F../rtl/apb_slave.v
+!i122 1
+L0 1 35
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z9 !s108 1765283128.000000
+Z10 !s107 run_test.v|../tb/test_bench.v|../rtl/timer_top.v|../rtl/register.v|../rtl/interrupt.v|../rtl/counter_ctrl.v|../rtl/apb_slave.v|
+Z11 !s90 +cover=bcesft|-f|compile.f|
+!i113 0
+R3
+Z12 o+cover=bcesft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vcounter_ctrl
+R5
+R6
+!i10b 1
+!s100 e;kaiFLCW2NfCSiOhZAfX1
+I5^5C@MBMn7mCnUJcoScS?2
+R2
+w1765282382
+8../rtl/counter_ctrl.v
+F../rtl/counter_ctrl.v
+!i122 1
+L0 1 60
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R3
+R12
+R4
+vinterrupt
+R5
+R6
+!i10b 1
+!s100 FVFX<jdnQ`Cl5SaHTDJ[53
+I2J=5OT`QM:E];AEYjSohE0
+R2
+w1763005991
+8../rtl/interrupt.v
+F../rtl/interrupt.v
+!i122 1
+L0 1 9
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R3
+R12
+R4
+vregister
+R5
+R6
+!i10b 1
+!s100 3hKHJ4zNa_G2;5zlDMSQL3
+IR_1z`XK36N48ZZhlzYXAE2
+R2
+w1764164638
+8../rtl/register.v
+F../rtl/register.v
+!i122 1
+L0 1 332
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R3
+R12
+R4
+vtest_bench
+R5
+R6
+!i10b 1
+!s100 GJf4FfXdg09;eIXYfE7SY3
+ICF[<d>;3>CflXfJT[n9hi1
+R2
+w1765283128
+8../tb/test_bench.v
+F../tb/test_bench.v
+Frun_test.v
+!i122 1
+L0 1 417
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R3
+R12
+R4
+vtimer_top
+R5
+R6
+!i10b 1
+!s100 n3LB2AR[e;@XSVO9?44U11
+IDN2N_:E_lJd8<V:cG@4GX3
+R2
+w1763792461
+8../rtl/timer_top.v
+F../rtl/timer_top.v
+!i122 1
+L0 1 79
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R3
+R12
+R4

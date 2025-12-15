@@ -1,0 +1,153 @@
+# vsim -coverage -l counter_ctrl.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit counter_ctrl.ucdb; log -r /*;run -all" 
+# Start time: 19:25:29 on Dec 09,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit counter_ctrl.ucdb
+#  log -r /*
+# run -all
+# =======================================================================
+# ===========================Counter Control=============================
+# ============================default====================================
+# t=       200 [TB_WRITE]: addr=000 data=00000000
+# t=       386 [TB_WRITE]: addr=000 data=00000001
+# t=      5776 [TB_READ]: addr=004, data=00000067
+# =================================================
+#       5786 PASS: rdata = 00000067 at address 00000004 is correct
+# =================================================
+# t=      5786 [TB_WRITE]: addr=000 data=00000000
+# t=      5996 [TB_WRITE]: addr=000 data=00000003
+# t=     16376 [TB_READ]: addr=004, data=000000cb
+# =================================================
+#      16386 PASS: rdata = 000000cb at address 00000004 is correct
+# =================================================
+# t=     16386 [TB_WRITE]: addr=000 data=00000002
+# t=     16586 [TB_WRITE]: addr=000 data=00000000
+# t=     16796 [TB_WRITE]: addr=000 data=00000103
+# t=     27176 [TB_READ]: addr=004, data=00000065
+# =================================================
+#      27186 PASS: rdata = 00000065 at address 00000004 is correct
+# =================================================
+# t=     27186 [TB_WRITE]: addr=000 data=00000102
+# t=     27386 [TB_WRITE]: addr=000 data=00000000
+# t=     27596 [TB_WRITE]: addr=000 data=00000203
+# t=     37976 [TB_READ]: addr=004, data=00000032
+# =================================================
+#      37986 PASS: rdata = 00000032 at address 00000004 is correct
+# =================================================
+# t=     37986 [TB_WRITE]: addr=000 data=00000202
+# t=     38186 [TB_WRITE]: addr=000 data=00000000
+# t=     38396 [TB_WRITE]: addr=000 data=00000303
+# t=     48776 [TB_READ]: addr=004, data=00000019
+# =================================================
+#      48786 PASS: rdata = 00000019 at address 00000004 is correct
+# =================================================
+# t=     48786 [TB_WRITE]: addr=000 data=00000302
+# t=     48986 [TB_WRITE]: addr=000 data=00000000
+# t=     49196 [TB_WRITE]: addr=000 data=00000403
+# t=     69576 [TB_READ]: addr=004, data=00000019
+# =================================================
+#      69586 PASS: rdata = 00000019 at address 00000004 is correct
+# =================================================
+# t=     69586 [TB_WRITE]: addr=000 data=00000402
+# t=     69786 [TB_WRITE]: addr=000 data=00000000
+# t=     69996 [TB_WRITE]: addr=000 data=00000503
+# t=     90376 [TB_READ]: addr=004, data=0000000c
+# =================================================
+#      90386 PASS: rdata = 0000000c at address 00000004 is correct
+# =================================================
+# t=     90386 [TB_WRITE]: addr=000 data=00000502
+# t=     90586 [TB_WRITE]: addr=000 data=00000000
+# t=     90796 [TB_WRITE]: addr=000 data=00000603
+# t=    111176 [TB_READ]: addr=004, data=00000006
+# =================================================
+#     111186 PASS: rdata = 00000006 at address 00000004 is correct
+# =================================================
+# t=    111186 [TB_WRITE]: addr=000 data=00000602
+# t=    111386 [TB_WRITE]: addr=000 data=00000000
+# t=    111596 [TB_WRITE]: addr=000 data=00000703
+# t=    131976 [TB_READ]: addr=004, data=00000003
+# =================================================
+#     131986 PASS: rdata = 00000003 at address 00000004 is correct
+# =================================================
+# t=    131986 [TB_WRITE]: addr=000 data=00000702
+# t=    132186 [TB_WRITE]: addr=000 data=00000000
+# t=    132396 [TB_WRITE]: addr=000 data=00000803
+# t=    152776 [TB_READ]: addr=004, data=00000001
+# =================================================
+#     152786 PASS: rdata = 00000001 at address 00000004 is correct
+# =================================================
+# t=    152786 [TB_WRITE]: addr=000 data=00000802
+# t=    152986 [TB_WRITE]: addr=000 data=00000000
+# t=    153196 [TB_WRITE]: addr=004 data=fffffffa
+# t=    153386 [TB_WRITE]: addr=008 data=ffffffff
+# t=    153596 [TB_WRITE]: addr=014 data=00000001
+# t=    153786 [TB_WRITE]: addr=000 data=00000001
+# t=    164176 [TB_READ]: addr=004, data=000000c5
+# t=    164376 [TB_READ]: addr=018, data=00000001
+# t=    164386 [TB_WRITE]: addr=000 data=00000000
+# t=    164776 [TB_READ]: addr=004, data=00000000
+# t=    164786 [TB_WRITE]: addr=014 data=00000000
+# t=    165176 [TB_READ]: addr=014, data=00000000
+# t=    165376 [TB_READ]: addr=018, data=00000001
+#     165386 WRITE_PSTRB: addr=014, data=00000001, pstrb=2
+# t=    165776 [TB_READ]: addr=014, data=00000000
+# t=    165786 [TB_WRITE]: addr=000 data=00000003
+#     166086 WRITE_PSTRB: addr=000, data=00000000, pstrb=e
+#     166286 WRITE_PSTRB: addr=000, data=00000000, pstrb=f
+# =================================================
+# t=    166426 PASS: pslverr detected
+# =================================================
+# t=    166486 [TB_WRITE]: addr=000 data=00000000
+#     166686 WRITE_PSTRB: addr=000, data=00000003, pstrb=f
+#     166886 WRITE_PSTRB: addr=000, data=00000002, pstrb=e
+#     167086 WRITE_PSTRB: addr=000, data=00000002, pstrb=f
+#     167286 WRITE_PSTRB: addr=000, data=00000000, pstrb=f
+#     167486 WRITE_PSTRB: addr=000, data=00000803, pstrb=f
+#     167686 WRITE_PSTRB: addr=000, data=00000802, pstrb=f
+#     167886 WRITE_PSTRB: addr=000, data=00000000, pstrb=f
+#     168086 WRITE_PSTRB: addr=000, data=ffffffff, pstrb=f
+# =================================================
+# t=    168226 PASS: pslverr detected
+# =================================================
+# t=    168476 [TB_READ]: addr=000, data=00000000
+#     168486 WRITE_PSTRB: addr=000, data=00000003, pstrb=1
+#     168786 WRITE_PSTRB: addr=000, data=00000001, pstrb=1
+# =================================================
+# t=    168926 PASS: pslverr detected
+# =================================================
+#     169086 WRITE_PSTRB: addr=000, data=00000001, pstrb=2
+#     169386 WRITE_PSTRB: addr=000, data=00000000, pstrb=1
+# =================================================
+# t=    169526 PASS: pslverr detected
+# =================================================
+# t=    169586 [TB_WRITE]: addr=004 data=fffffffe
+# t=    169786 [TB_WRITE]: addr=008 data=ffffffff
+# t=    169986 [TB_WRITE]: addr=000 data=00000003
+# t=    172675 [TB_WRITE]: addr=014 data=00000001
+# t=    172886 [TB_WRITE]: addr=018 data=00000001
+# t=    173276 [TB_READ]: addr=018, data=00000000
+# t=    173476 [TB_READ]: addr=014, data=00000001
+# t=    175975 [TB_WRITE]: addr=014 data=00000001
+# t=    176186 [TB_WRITE]: addr=018 data=00000001
+# t=    176826 [TB_READ]: addr=018, data=00000000
+# t=    177026 [TB_READ]: addr=014, data=00000001
+# Test_result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(69)
+#    Time: 177536 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 19:25:30 on Dec 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
